@@ -1,0 +1,49 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.role-container {
+  max-width: 500px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  text-align: center;
+}
+
+.role-container h2 {
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 24px;
+}
+
+.role-selector {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.vendor-dropdown {
+  margin-top: 16px;
+}
+
+button[mat-raised-button] {
+  margin-top: 24px;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Dashboard padding */
+.ld-dashboard, .vendor-dashboard {
+  padding: 32px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Simple animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

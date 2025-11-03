@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <span>Training Request Management System</span>
+  <span class="spacer"></span>
+  <mat-icon>school</mat-icon>
+  <button *ngIf="showNavigation" mat-icon-button (click)="changeRole()" matTooltip="Change Role">
+    <mat-icon>switch_account</mat-icon>
+  </button>
+</mat-toolbar>
+
+<app-ld-navigation *ngIf="isLdRole"></app-ld-navigation>
+<router-outlet></router-outlet>
