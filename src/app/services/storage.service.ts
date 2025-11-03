@@ -63,7 +63,7 @@ export class StorageService {
   createRequest(payload: Partial<TrainingRequest>) {
     const s = this.loadState();
     const newR: TrainingRequest = {
-      id: uuidv4(),
+      id: payload.id || uuidv4(),
       courseName: payload.courseName || 'Untitled',
       duration: payload.duration || '',
       traineeCount: payload.traineeCount || 0,

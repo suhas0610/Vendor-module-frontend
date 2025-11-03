@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
@@ -62,6 +63,7 @@ import { RoleSelectionComponent } from './role-selection/role-selection.componen
     MatChipsModule,
     MatSnackBarModule,
     MatCardModule,
+  MatCheckboxModule,
     MatDialogModule,
     MatRadioModule,
     MatTooltipModule
